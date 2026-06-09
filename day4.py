@@ -170,8 +170,19 @@ print(d.values())
 
 
 
-address={"Message":"Number of Post office(s) found: 12","Status":"Success","PostOffice":[{"Name":"Belan Bazar","Description":"","BranchType":"Sub Post Office","DeliveryStatus":"Non-Delivery","Taluk":"Munger","Circle":"Munger","District":"Munger","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"C.R.Barbigha Ed So","Description":"","BranchType":"Branch Office directly a/w Head Office","DeliveryStatus":"Non-Delivery","Taluk":"Sheikhpura","Circle":"Sheikhpura","District":"Sheikhpura","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"C.R.Lakhisarai","Description":"","BranchType":"Branch Office directly a/w Head Office","DeliveryStatus":"Non-Delivery","Taluk":"Lakhisarai","Circle":"Lakhisarai","District":"Lakhisarai","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"Ganga Darshan","Description":"","BranchType":"Sub Post Office","DeliveryStatus":"Non-Delivery","Taluk":"Munger","Circle":"Munger","District":"Munger","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"Jamalpur Work Shop Ed So","Description":"","BranchType":"Branch Office directly a/w Head Office","DeliveryStatus":"Non-Delivery","Taluk":"Jamalpur","Circle":"Jamalpur","District":"Munger","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"Lal Darwaza (Munger)","Description":"","BranchType":"Sub Post Office","DeliveryStatus":"Non-Delivery","Taluk":"Munger","Circle":"Munger","District":"Munger","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"Munger","Description":"","BranchType":"Head Post Office","DeliveryStatus":"Delivery","Taluk":"Munger","Circle":"Munger","District":"Munger","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"Munger College","Description":"","BranchType":"Sub Post Office","DeliveryStatus":"Non-Delivery","Taluk":"Munger","Circle":"Munger","District":"Munger","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"Munger Fort","Description":"","BranchType":"Sub Post Office","DeliveryStatus":"Non-Delivery","Taluk":"Munger","Circle":"Munger","District":"Munger","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"Munger Town","Description":"","BranchType":"Sub Post Office","DeliveryStatus":"Non-Delivery","Taluk":"Munger","Circle":"Munger","District":"Munger","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"N.D.Road Munger","Description":"","BranchType":"Sub Post Office","DeliveryStatus":"Non-Delivery","Taluk":"Munger","Circle":"Munger","District":"Munger","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"},{"Name":"Purab Sarai","Description":"","BranchType":"Sub Post Office","DeliveryStatus":"Non-Delivery","Taluk":"Munger","Circle":"Munger","District":"Munger","Division":"Monghyr","Region":"Patna HQ","State":"Bihar","Country":"India"}]}
+address={"Message":"Number of Post office(s) found: 12","Status":"Success","PostOffice":[{"Name":"Belan Bazar",
+                                                                                          "Description":"","BranchType":"Sub Post Office",
+                                                                                          "DeliveryStatus":"Non-Delivery","Taluk":"Munger","Circle":"Munger",
+                                                                                          "District":"Munger","Division":"Monghyr","Region":"Patna HQ",
+                                                                                          "State":"Bihar","Country":"India"}]}
 
-
-for i in address():
-   print(i, "=",d[i])
+for i in address["PostOffice"]:
+    print(i["Name"])
+    print(i["Taluk"])
+    print(i["Circle"])
+    print(i["District"])
+    print(i["Division"])
+    print(i["Region"])
+    print(i["State"])
+    print(i["Country"])
+    print("\n")
